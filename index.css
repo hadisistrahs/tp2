@@ -1,0 +1,89 @@
+body 
+{
+	/* on enlève les petites marges par défaut */
+    margin:0;
+    background-color: white;
+}
+
+#page /* division qui englobe toute la page */
+{
+	/* par défaut, la police de caractères utilisée est "Times New Roman" */
+	font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial,sans-serif;
+}
+
+#page > header /* le style s'applique au premier "header" de la page */
+{
+	background-color: black;
+	height: 150px; /* à modifier selon les besoins */
+	text-align: center; /* on centre le contenu de l'en-tête */
+	/* background-image: url("newheader.png"); */
+	font-family: 'Trade Winds';
+	
+}
+
+#page > header h1 /* le style s'applique au titre de niveau 1 du premier "header" de la page */
+{
+	color:white;
+	margin: auto;
+	padding: 50px;
+}
+
+nav
+{
+	background-color: rgb(168, 117, 192);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  nav li {
+	display: inline-block;
+	margin: 0 14px;
+	padding-top: 1px;
+	position: relative;
+  }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color:blue;
+}
+
+nav a:before {
+    color: red; 
+}
+
+
+
+main /* c'est le contenu principal */
+{
+	display: block; /* répare IE */
+	min-height: 300px; /* hauteur minimale; sinon la hauteur s'ajustera au contenu */
+	padding-left: 10px;
+}
+
+main h2 {
+	color: black;
+	
+}
+
+main p {
+	text-align: left;
+	margin: 14px;	
+}
+
+footer
+{
+	background-color: black;
+    height: 30px;
+}
